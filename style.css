@@ -1,7 +1,7 @@
 /*Variables*/
 :root {
   --text-color: white;
-  --bag-url: url(./assets/bg-mobile.jpg);
+  --bg-url: url(./assets/bg-mobile.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -10,7 +10,7 @@
 }
 
 .light {
-  --bag-url: url(./assets/bg-mobile-light.jpg);
+  --bg-url: url(./assets/bg-mobile-light.jpg);
   --text-color: black;
   --stroke-color: rgba(0, 0, 0, 0.05);
   --surface-color: rgba(0, 0, 0, 0.05);
@@ -26,8 +26,9 @@
 }
 
 body {
-  background: var(--bag-url) no-repeat top center/cover;
+  background: var(--bg-url) no-repeat top center/cover;
   height: 100vh;
+  /* border: 1px solid red; */
 }
 
 body * {
@@ -38,8 +39,8 @@ body * {
 #container {
   width: 100%;
   max-width: 588px;
-  margin: 56px auto 0px;
-  padding: 0 24px;
+  margin: 0px auto 0px;
+  padding: 56px 24px;
 }
 
 /*Profile*/
@@ -161,7 +162,7 @@ footer {
   }
 
   .light {
-    bg-url: url(./assets/bg-desktop-light.jpg);
+    --bg-url: url(./assets/bg-desktop-light.jpg);
   }
 }
 
